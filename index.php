@@ -1,13 +1,7 @@
+
 <?php
 session_start();
-require 'vendor/autoload.php';
 
-use Gregwar\Captcha\CaptchaBuilder;
-
-// Membuat CAPTCHA
-$builder = new CaptchaBuilder;
-$builder->build();
-$_SESSION['phrase'] = $builder->getPhrase();
 ?>
 
 <!DOCTYPE html>
